@@ -2,6 +2,7 @@ document.getElementById('colorInput').addEventListener('input', function() {
      const color = this.value;
      document.getElementById('hexValue').textContent = color;
      document.getElementById('rgbValue').textContent = hexToRgb(color);
+     document.body.style.backgroundColor = color;
  });
  function hexToRgb(hex) {
      const r = parseInt(hex.slice(1, 3), 16);
